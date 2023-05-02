@@ -2,6 +2,7 @@
  * ctrl shift p command pal */
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 @font-face {
 	font-family: 'Garamond';
 	src: url('../fonts/garamond.ttf');
@@ -91,21 +92,35 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 100px;
+	color: white;
 }
 .footer-items li {
 	display: inline-block;	
-	margin-right: 5px;
+	margin-right: 10px;
+text-decoration-line: underline;
 
 }
 
 .footer-items li a {
-	font-family: 'Montserrat';
-	color: black;
-	font-size: 20px;
+	color: white;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 27px;
+	/* identical to box height */
+	text-decoration-line: underline;
 }
 
 .footer-items li a:hover {
-	color: black;
+	color: white;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 27px;
+	/* identical to box height */
+	text-decoration-line: underline;
 }
 
 .footer-items {
@@ -125,6 +140,18 @@ footer {
 
 .navbar-brand sup {
 	font-size: 32px;
+}
+
+.footer-brand {
+	font-size: 36px;
+	font-family: 'HelveticaNeueCyr';
+	font-style: normal;
+	font-weight: 900;
+	z-index: 3;
+}
+
+.footer-brand sup {
+	font-size: 24px;
 }
 
 .navbar-menu li a {
@@ -333,6 +360,11 @@ main {
 
 .tinder-reactions {
 	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	padding: 0 120px;
+	align-items: center;
+	justify-content: center;
 }
 
 .switchers {
@@ -341,5 +373,49 @@ main {
 	bottom: 18px;
 	display: flex;
 	flex-direction: row;
-	
+
+}
+
+.switcher-element {
+	border: 3px solid;
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+.active {
+	background-color: white;
+}
+
+.animated-button {
+	width: 72px;
+	height: 72px;
+	margin-right: 70px;
+	position: relative;
+	background-color: transparent;
+	border: none;
+}
+
+.animated-button:last-child {
+	margin-right: 0;
+}
+
+.animated-button:hover {
+	transform: scale(1.05);
+
+}
+
+.animated-button img {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.black-on-white {
+	color: black;
+	background-color: white;
+	border-bottom: 2px solid #111111;
 }
